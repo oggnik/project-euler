@@ -1,7 +1,7 @@
 arr = []
 
-for i in 100..999
-	for j in 100..999
+for i in 999.downto(100)
+	for j in 999.downto(100)
 		num = i * j
 		num_string = num.to_s
 		if num_string == num_string.reverse
@@ -10,4 +10,4 @@ for i in 100..999
 	end
 end
 
-puts arr.sort
+puts arr.max
